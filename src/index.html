@@ -4,9 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="author" content="Markelov Vadim">
+  <link rel="stylesheet" href="./page/index.css">
+  <title>My page</title>
 </head>
-<body>
+<body class="root">
+  <header class="header root__header">
+    <nav class="header__list">
+      <ul class="header__links">
+        <li class="header__item">ГЛАВНАЯ</li>
+        <li class="header__item">СТАТЬИ</li>
+        <li class="header__item">ОБО МНЕ</li>
+        <li class="header__item">РЕКЛАМА</li>
+        <li class="header__item">ПРОФИЛЬ</li>
+      </ul>
+      <form class="form header__form">
+        <input type="text" class="form__input" placeholder="Поиск по блоку">
+      </form>
+    </nav>
+  </header>
+  <aside class="sidebar">
+    <section class="profile sidebar__profile">
+      <div class="profile__card">
+        <img src="" alt="" class="profile__avatar">
+        <h1 class="profile__title">Вадим Маркелов</h1>
+        <p class="profile__subtitle">блог front-end разработчика</p>
+        <ul class="profile__resources">
+          <li>
+            <a href="#" target="_blank" class="profile__link">
+              <img src="" alt="" class="profile__logo">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="profile__link">
+              <img src="" alt="" class="profile__logo">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="profile__link">
+              <img src="" alt="" class="profile__logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="profile__paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. 
+        Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+        Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+      </p>
+      <div class="profile__buttons">
+        <button class="profile__button_type_red">Мои работы</button>
+        <button class="profile__button_type_blue">Написать мне</button>
+      </div>
+    </section>
+  </aside>
+  <main class="content">
+
+  </main>
   
 </body>
 </html>

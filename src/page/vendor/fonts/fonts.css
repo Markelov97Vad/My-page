@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Roboto.woff2) format('woff2'),
+  url(./Roboto.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Lato-Regular.woff2) format('woff2'),
+  url(./Lato-Regular.woff) format('woff');
+}
