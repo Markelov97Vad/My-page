@@ -6,6 +6,13 @@
   url(./Roboto.woff) format('woff');
 }
 @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(./roboto-light3002.woff2) format('woff2'),
+  url(./roboto-light3002.woff2) format('woff');
+}
+@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;

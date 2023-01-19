@@ -10,39 +10,39 @@
 </head>
 <body class="root">
   <header class="header root__header">
-    <nav class="header__list">
-      <ul class="header__links">
-        <li class="header__item">ГЛАВНАЯ</li>
-        <li class="header__item">СТАТЬИ</li>
-        <li class="header__item">ОБО МНЕ</li>
-        <li class="header__item">РЕКЛАМА</li>
-        <li class="header__item">ПРОФИЛЬ</li>
-      </ul>
-      <form class="form header__form">
-        <input type="text" class="form__input" placeholder="Поиск по блоку">
-      </form>
-    </nav>
+    <ul class="header__links">
+      <li class="header__item">ГЛАВНАЯ</li>
+      <li class="header__item">СТАТЬИ</li>
+      <li class="header__item">ОБО МНЕ</li>
+      <li class="header__item">РЕКЛАМА</li>
+    </ul>
+    <ul class="header__links">
+      <li class="header__item">ПРОФИЛЬ</li>
+    </ul>
+    <form class="form header__form">
+      <input type="text" class="form__input" placeholder="Поиск по блоку">
+    </form>
   </header>
   <aside class="sidebar">
     <section class="profile sidebar__profile">
       <div class="profile__card">
-        <img src="" alt="" class="profile__avatar">
+        <img src="./images/i-am.jpg" alt="аватар" class="profile__avatar">
         <h1 class="profile__title">Вадим Маркелов</h1>
         <p class="profile__subtitle">блог front-end разработчика</p>
         <ul class="profile__resources">
           <li>
             <a href="#" target="_blank" class="profile__link">
-              <img src="" alt="" class="profile__logo">
+              <img src="./images/inst.svg" alt="instagram" class="profile__logo">
             </a>
           </li>
           <li>
             <a href="#" target="_blank" class="profile__link">
-              <img src="" alt="" class="profile__logo">
+              <img src="./images/vk.svg" alt="vk" class="profile__logo">
             </a>
           </li>
           <li>
             <a href="#" target="_blank" class="profile__link">
-              <img src="" alt="" class="profile__logo">
+              <img src="./images/twit.svg" alt="twitter" class="profile__logo">
             </a>
           </li>
         </ul>
@@ -57,8 +57,29 @@
       </div>
     </section>
   </aside>
-  <main class="content">
-
+  <main class="content root__content">
+    <section class="section section__cards content__cards">
+        <article class="card__bacrground-image">
+          <img class="card__img" src="./images/рабочее-пространство.jpeg" alt="">
+          <h3 class="card__title">Обновил технику</h3>
+          <p class="card__date">19.01.2023</p>
+        </article>
+        <article class="card__bacrground-image">
+          <img class="card__img" src="./images/kosarfutar.hu.jpg" alt="">
+          <h3 class="card__title">Отдых на природе</h3>
+          <p class="card__date">07.06.2022</p>
+        </article>
+        <article class="card__bacrground-image">
+          <img class="card__img" src="./images/5112-1.jpeg" alt="">
+          <h3 class="card__title">Приготовил ужин</h3>
+          <p class="card__date">10.01.2023</p>
+        </article>
+        <article class="card__bacrground-image">
+          <img class="card__img" src="./images/bp.jpeg" alt="">
+          <h3 class="card__title">Покатался на лыжах</h3>
+          <p class="card__date">03.01.2023</p>
+        </article>
+    </section>
   </main>
   
 </body>

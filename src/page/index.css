@@ -4,7 +4,8 @@
   max-width: 1000px;
   background: #181818;
   color: #fff;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: minmax(40px, max-content);
   grid-template-areas: 
   "sidebar header"
   "sidebar wall";
@@ -15,16 +16,16 @@
 
 .header {
   grid-area: header;
-  display: flex;
 }
-.header__list {
+.root__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 0;
   max-height: 40px;
 }
 .header__links {
   display: flex;
+  align-items: center;
   font-style: normal;
   font-size: 11px;
   line-height: 13px;
@@ -32,13 +33,13 @@
   list-style: none;
   gap: 23px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 .header__item {
   cursor: pointer;
 }
-.header__item:nth-child(5) {
-  margin-left: 10px;
+.header__item:nth-child(1) {
+  margin-left: 15px;
 }
 .header__form {
   display: flex;
@@ -58,16 +59,175 @@
   background-color: transparent;
   padding: 0;
   margin-left: 30px;
+  min-width: 212px;
 }
 .form__input:focus {
   outline: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-
-
 .sidebar {
   grid-area: sidebar;
+  /* display: flex;
+  justify-content: center; */
   background: #202020;
   box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
+  background-image: url(../images/background-image.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 180px;
+  box-sizing: border-box;
+  max-width: 300px;
+  height: 100vh;
+}
+.sidebar__profile {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+.profile__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 130px;
+  align-items: center;
+}
+.profile__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.profile__title {
+  margin: 19px 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.profile__subtitle {
+  margin: 3px 0 0;
+  color: #dedede98;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.profile__resources {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 0;
+  margin: 17px 0 0;
+}
+.profile__logo {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+.profile__paragraph {
+  margin: 60px 20px 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.profile__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 60px 20px 0;
+  align-items: center;
+  gap: 20px;
+}
+.profile__button_type_red {
+  border-radius: 25px;
+  background: #ED3024;;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+  text-decoration: none;
+  padding: 13px 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.profile__button_type_blue {
+  border-radius: 25px;
+  background: #3137C9;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+  text-decoration: none;
+  padding: 13px 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.content {
+  max-width: 700px;
+}
+.root__content {
+  margin: 60px 50px 80px;
+  display: flex;
+  flex-direction: column;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+.section__cards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns:repeat(auto-fit, minmax(max-content, 140px));
+  gap: 13px;
+}
+.card__bacrground-image {
+  
+  /* width: 140px; */
+  height: 195px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+  filter: drop-shadow(0px 5px 15px rgba(93, 62, 45, 0.511));
+}
+.card__img {
+  width: 140px;
+  height: 195px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.card__title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+  text-align: left;
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  /* margin: 14px auto 0 13px; */
+}
+.card__date {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 14px;
+  right: 17px;
+  margin: 0;
 }
